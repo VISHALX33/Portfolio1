@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans bg-bg-light text-primary-dark text-base antialiased; 
+  margin: 0;
+}
+
+.container {
+  @apply mx-auto px-4 max-w-content;
+}
+
+section {
+  @apply py-20; 
+}
+
+.section-title {
+  @apply text-3xl font-bold mb-8 text-primary-dark dark:text-primary-light;
+}
+
+.btn {
+  @apply inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2 font-medium text-white shadow-lift transition hover:bg-primary-light active:scale-[.97];
+}
+
+.btn-outline {
+  @apply inline-flex items-center gap-2 rounded-md border border-primary px-5 py-2 font-medium text-primary-dark dark:text-primary-light hover:bg-primary-light/10 transition;
+}
+
+.badge {
+  @apply inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary-dark dark:text-primary-light;
+}
+
+/* Dark mode base */
+.dark body {
+  @apply bg-neutral-900 text-bg-subtle;
+}
+
+/* Utilities */
+.grid-responsive {
+  @apply grid gap-6 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+/* Navbar active link */
+.nav-link {
+  @apply cursor-pointer px-3 py-2 text-sm font-medium text-primary-dark dark:text-primary-light transition relative;
+}
+.nav-link.active {
+  @apply text-primary;
+}
+.nav-link.active::after {
+  content: '';
+  @apply absolute left-0 right-0 -bottom-1 h-0.5 bg-primary rounded;
+}
+
+/* Typing caret */
+.typing-caret::after {
+  content: '|';
+  animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink { 0%, 50% { opacity: 1 } 51%,100% { opacity: 0 } }
+
+/* Timeline */
+.timeline {
+  @apply relative border-l border-primary/30 pl-6;
+}
+.timeline-item {
+  @apply mb-10 relative;
+}
+.timeline-item::before {
+  content: '';
+  @apply absolute -left-3 top-1 h-3 w-3 rounded-full bg-primary shadow;
+}
+
+/* Form */
+form.contact-form input, form.contact-form textarea {
+  @apply w-full rounded-md border border-primary/30 bg-white dark:bg-neutral-800 px-4 py-3 text-sm outline-none focus:border-primary focus:ring-1 focus:ring-primary;
+}
+form.contact-form button[type=submit] {
+  @apply btn mt-2 w-full;
+}
+
+/* Footer */
+footer {
+  @apply py-10 text-center text-sm bg-primary-dark text-white dark:bg-neutral-950;
+}
+
+/* Scroll fade-in (basic; enhanced with motion) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
