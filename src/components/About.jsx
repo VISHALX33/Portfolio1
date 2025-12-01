@@ -40,14 +40,7 @@ export default function About() {
         </div>
 
         {/* Quick Facts */}
-        <h3 className="text-xl font-semibold mt-6 mb-3">Quick Facts</h3>
 
-        <div className="space-y-2 mb-6">
-          <p><strong>Experience:</strong> 0.6 Years</p>
-          <p><strong>Projects Completed:</strong> 5+</p>
-          <p><strong>Technologies:</strong> 15+</p>
-          <p><strong>CGPA:</strong> 8.5/10</p>
-        </div>
 
         {/* Education */}
     

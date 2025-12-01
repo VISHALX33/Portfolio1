@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin , FaInstagram,FaTwitter } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const roles = ['Full Stack Web Developer', 'React Enthusiast', 'Problem Solver'];
@@ -45,7 +45,10 @@ export default function Hero() {
           </div>
           <div className="flex items-center gap-4 text-xl">
             <a href="https://github.com/VISHALX33" target="_blank" rel="noopener" className="text-primary-dark dark:text-primary-light hover:text-primary"><FaGithub /></a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener" className="text-primary-dark dark:text-primary-light hover:text-primary"><FaLinkedin /></a>
+            <a href="https://www.linkedin.com/in/vishal-prajapati-445799289/" target="_blank" rel="noopener" className="text-primary-dark dark:text-primary-light hover:text-primary"><FaLinkedin /></a>
+            <a href="https://www.instagram.com/vishal_20_03/" target="_blank" rel="noopener" className="text-primary-dark dark:text-primary-light hover:text-primary"><FaInstagram /></a>
+            <a href="https://x.com/VishalPraja89" target="_blank" rel="noopener" className="text-primary-dark dark:text-primary-light hover:text-primary"><FaTwitter /></a>
+
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, scale: .9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: .1 }} className="flex-1 flex justify-center">
