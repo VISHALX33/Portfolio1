@@ -34,8 +34,8 @@ export const projects = [
     name: "Single-Seller",
     category: "fullstack",
     description:
-      "A full-stack note-sharing app with real-time chat and personal productivity tools, featuring secure file uploads/downloads and dynamic note pinning.",
-    image: "note.png",
+      "A comprehensive single-vendor e-commerce platform with product management, shopping cart, secure checkout, and order tracking functionality.",
+    image: "ecommerce.png",
     stack: [
       "MongoDB",
       "Express.js",
@@ -45,10 +45,10 @@ export const projects = [
       "JWT"
     ],
     features: [
-      "Note Sharing",
-      "Real-time Chat",
-      "File Upload/Download",
-      "Dynamic Pinning",
+      "Product Management",
+      "Shopping Cart",
+      "Secure Checkout",
+      "Order Tracking",
       "User Authentication",
       "Responsive Design"
     ],
@@ -79,5 +79,54 @@ export const projects = [
     ],
     live: "https://elite-crew.netlify.app/",
     repo: "https://github.com/VISHALX33/elite-crew"
+  },
+  {
+    id: 4,
+    name: "Portfolio1",
+    category: "frontend",
+    description:
+      "A modern and responsive portfolio website showcasing projects, skills, and professional experience with an elegant UI and smooth animations.",
+    image: "portfolio.png",
+    stack: [
+      "React.js",
+      "Tailwind CSS",
+      "Vite",
+      "JavaScript"
+    ],
+    features: [
+      "Responsive Design",
+      "Project Showcase",
+      "Skills Display",
+      "Contact Form",
+      "Smooth Animations",
+      "Modern UI"
+    ],
+    live: "https://vishalprajapatidev.netlify.app/",
+    repo: "https://github.com/VISHALX33/Portfolio1"
+  },
+  {
+    id: 5,
+    name: "Hotel Booking System",
+    category: "fullstack",
+    description:
+      "A comprehensive hotel booking platform with room management, reservation system, and payment integration, providing seamless booking experience for users.",
+    image: "hotel.png",
+    stack: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "Tailwind CSS"
+    ],
+    features: [
+      "Room Booking",
+      "Reservation Management",
+      "Payment Integration",
+      "User Authentication",
+      "Admin Dashboard",
+      "Responsive Design"
+    ],
+    live: "https://hotel-booking-system-silk.vercel.app/",
+    repo: "https://github.com/notesea-xyz/HotelBookingSystem"
   },
 ];

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { FaBars, FaTimes, FaMoon, FaSun } from 'react-icons/fa';
+import { FaBars, FaTimes, FaMoon, FaSun, FaGithub, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const SECTIONS = [
   { id: 'hero', label: 'Home' },
@@ -55,6 +55,20 @@ export default function Navbar() {
           ))}
         </nav>
         <div className="flex items-center gap-3">
+          <div className="md:hidden flex items-center gap-3">
+            <a href="https://github.com/VISHALX33" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-primary transition-colors" aria-label="GitHub">
+              <FaGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/vishal-prajapati-445799289/" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-primary transition-colors" aria-label="LinkedIn">
+              <FaLinkedin />
+            </a>
+            <a href="https://www.instagram.com/vishal_20_03/" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-primary transition-colors" aria-label="Instagram">
+              <FaInstagram />
+            </a>
+            <a href="https://x.com/VishalPraja89" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-primary transition-colors" aria-label="Twitter">
+              <FaTwitter />
+            </a>
+          </div>
           <button aria-label="Toggle dark mode" className="btn-outline !p-2" onClick={() => setDark(d => !d)}>
             {dark ? <FaSun /> : <FaMoon />}
           </button>

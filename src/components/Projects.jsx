@@ -33,33 +33,36 @@ export default function Projects() {
                 ))}
               </div>
 
-              {/* Features (optional display) */}
-              {p.features && (
-                <ul className="list-disc ml-4 mb-4 text-xs text-neutral-600 dark:text-neutral-300">
-                  {p.features.map((f, i) => (
-                    <li key={i}>{f}</li>
-                  ))}
-                </ul>
-              )}
+              {/* Features and Buttons */}
+              <div className="flex flex-col sm:flex-row justify-between gap-4">
+                {/* Features (optional display) */}
+                {p.features && (
+                  <ul className="list-disc ml-4 text-xs text-neutral-600 dark:text-neutral-300 flex-1">
+                    {p.features.map((f, i) => (
+                      <li key={i}>{f}</li>
+                    ))}
+                  </ul>
+                )}
 
-              {/* Buttons */}
-              <div className="flex gap-3 text-sm">
-                <a
-                  href={p.live}
-                  className="btn-outline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaExternalLinkAlt /> Live
-                </a>
-                <a
-                  href={p.repo}
-                  className="btn-outline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub /> Code
-                </a>
+                {/* Buttons */}
+                <div className="flex flex-col gap-2 text-sm sm:min-w-[120px]">
+                  <a
+                    href={p.live}
+                    className="btn-outline justify-center"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaExternalLinkAlt /> Live
+                  </a>
+                  <a
+                    href={p.repo}
+                    className="btn-outline justify-center"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub /> Code
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}

@@ -5,19 +5,19 @@ export default function About() {
 
   return (
     <section id="about">
-      <div className="container fade-in visible">
+      <div className="container">
 
         {/* Heading */}
-        <h2 className="section-title text-green-600">About Me</h2>
+        <h2 className="section-title text-green-600 animate-fade-in-up">About Me</h2>
 
         {/* About Text */}
-        <p className="max-w-3xl mb-4">
+        <p className="max-w-3xl mb-4 animate-fade-in-up animation-delay-200">
           I'm Vishal, a passionate <strong>Full Stack Web Developer</strong> specializing in the 
           <strong> MERN stack</strong>. I build scalable, efficient, and user-centric web applications 
           while continuously improving my development and problem-solving skills.
         </p>
 
-        <p className="max-w-3xl mb-4">
+        <p className="max-w-3xl mb-4 animate-fade-in-up animation-delay-400">
           I enjoy working across both frontend and backend, building clean, optimized, and 
           intuitive digital experiences. Currently pursuing my 
           <strong> B.Tech in Computer Science</strong> with a <strong>CGPA of 8.5/10</strong>, and 
@@ -27,9 +27,9 @@ export default function About() {
         {/* Highlights */}
        
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 animate-fade-in-up animation-delay-600">
           {highlights.map((item, index) => (
-            <div key={index} className="flex items-start gap-3 p-4 bg-gray-100 rounded-lg">
+            <div key={index} className="flex items-start gap-3 p-4 bg-gray-100 rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
               <span className="text-2xl">{item.icon}</span>
               <div>
                 <h4 className="font-semibold">{item.title}</h4>
@@ -46,17 +46,17 @@ export default function About() {
     
 
         {/* Interests */}
-        <h3 className="text-xl font-semibold mb-2">Hobbies & Interests</h3>
+        <h3 className="text-xl font-semibold mb-2 animate-fade-in-up animation-delay-800">Hobbies & Interests</h3>
 
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-3 animate-fade-in-up animation-delay-1000">
           {[
             'Full Stack Development',
             'DSA & Problem Solving',
             'Hackathons',
             'Web Technologies',
             'AI/ML'
-          ].map((item) => (
-            <span key={item} className="badge">{item}</span>
+          ].map((item, index) => (
+            <span key={item} className="badge hover:scale-110 transition-transform duration-300" style={{animationDelay: `${index * 100}ms`}}>{item}</span>
           ))}
         </div>
 
