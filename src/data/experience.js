@@ -1,5 +1,30 @@
 export const experience = [
   {
+  company: 'NeelX Technologies',
+  role: 'Full Stack Web Developer',
+  duration: 'Nov 2025 – Present',
+  location: 'Neemrana, Alwar, Rajasthan, India',
+  points: [
+    'Led full stack development, including building, testing, and deploying web applications using modern technologies.',
+    'Designed and implemented scalable frontend and backend solutions for client projects and internal tools.',
+    'Managed end-to-end deployment pipelines, performance optimization, and bug fixing to ensure high-quality deliverables.'
+  ]
+},
+{
+  company: 'NoteSea',
+  role: 'Founder & Full Stack Developer',
+  duration: 'Aug 2025 – Present',
+  location: 'India',
+  points: [
+    'Founded and currently managing NoteSea, handling all aspects of business operations, strategy, and growth.',
+    'Led full stack development, including building, testing, and deploying web applications and platforms.',
+    'Implemented marketing strategies, managed social media presence, and created YouTube content to engage users.',
+    'Oversaw product development, customer support, and platform scaling to ensure a seamless user experience.'
+  ]
+},
+
+
+  {
     company: 'SYNILOGIC TECH PRIVATE LIMITED',
     role: 'Full Stack Web Developer',
     duration: 'May 2025 – Jul 2025',

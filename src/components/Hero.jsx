@@ -40,7 +40,7 @@ export default function Hero() {
           <h2 className="text-xl md:text-2xl mb-4 typing-caret">{typed}</h2>
           <p className="mb-6 max-w-xl text-primary-dark/80 dark:text-bg-subtle">I build fast, accessible and delightful web experiences with a focus on clean architecture and performance.</p>
           <div className="flex flex-wrap gap-3 mb-6">
-            <a href="/resume.pdf" className="btn" download>Download Resume</a>
+            <a href="/vishalResume.pdf" className="btn" download>Download Resume</a>
             <a href="#contact" className="btn-outline">Contact Me</a>
           </div>
           <div className="flex items-center gap-4 text-xl">
