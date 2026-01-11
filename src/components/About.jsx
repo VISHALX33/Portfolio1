@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion';
+import aboutImage from '../assets/character/14.png';
+
 export default function About() {
   const highlights = [
     
@@ -6,23 +9,36 @@ export default function About() {
   return (
     <section id="about">
       <div className="container">
+        <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="order-2 md:order-1"
+          >
+            <img src={aboutImage} alt="About Me" className="w-full max-w-sm mx-auto object-contain drop-shadow-xl" />
+          </motion.div>
+          <div className="order-1 md:order-2">
 
         {/* Heading */}
         <h2 className="section-title text-green-600 animate-fade-in-up">About Me</h2>
 
         {/* About Text */}
-        <p className="max-w-3xl mb-4 animate-fade-in-up animation-delay-200">
+        <p className="mb-4 animate-fade-in-up animation-delay-200">
           I'm Vishal, a passionate <strong>Full Stack Web Developer</strong> specializing in the 
           <strong> MERN stack</strong>. I build scalable, efficient, and user-centric web applications 
           while continuously improving my development and problem-solving skills.
         </p>
 
-        <p className="max-w-3xl mb-4 animate-fade-in-up animation-delay-400">
+        <p className="mb-4 animate-fade-in-up animation-delay-400">
           I enjoy working across both frontend and backend, building clean, optimized, and 
           intuitive digital experiences. Currently pursuing my 
           <strong> B.Tech in Computer Science</strong> with a <strong>CGPA of 8.5/10</strong>, and 
           actively participating in hackathons and coding competitions.
         </p>
+          </div>
+        </div>
 
         {/* Highlights */}
        
