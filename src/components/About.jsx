@@ -55,10 +55,7 @@ export default function About() {
           ))}
         </div>
 
-        {/* Quick Facts */}
-
-
-        {/* Education */}
+      
     
 
         {/* Interests */}

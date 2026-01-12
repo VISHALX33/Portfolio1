@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { FaGithub, FaLinkedin , FaInstagram,FaTwitter, FaYoutube, FaShare } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import bannerImage from '../assets/banner.png';
 
 const roles = ['Full Stack Web Developer', 'React Enthusiast', 'Problem Solver'];
 
@@ -60,6 +61,23 @@ export default function Hero() {
 
   return (
     <section id="hero" className="pt-24">
+      {/* Banner - Desktop Only */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        className="hidden lg:block w-full mb-8"
+      >
+        <div className="relative w-full h-64 overflow-hidden rounded-xl shadow-lg">
+          <img 
+            src={bannerImage} 
+            alt="Vishal Prajapati Banner" 
+            className="w-full  object-cover object-center"
+            loading="eager"
+          />
+        </div>
+      </motion.div>
+
       <div className="container flex flex-col-reverse md:flex-row items-center gap-10">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="flex-1">
           <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">Hi, I'm <span className="text-primary">Vishal</span></h1>
