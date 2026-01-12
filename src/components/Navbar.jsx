@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { FaBars, FaTimes, FaMoon, FaSun, FaGithub, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaBars, FaTimes, FaMoon, FaSun, FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const SECTIONS = [
   { id: 'hero', label: 'Home' },
@@ -68,6 +68,9 @@ export default function Navbar() {
             </a>
             <a href="https://x.com/VishalPraja89" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-primary transition-colors" aria-label="Twitter">
               <FaTwitter />
+            </a>
+            <a href="https://www.youtube.com/@Vishalprajapati-q7l" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-primary transition-colors" aria-label="YouTube">
+              <FaYoutube />
             </a>
           </div>
           <button aria-label="Toggle dark mode" className="btn-outline !p-2" onClick={() => setDark(d => !d)}>
